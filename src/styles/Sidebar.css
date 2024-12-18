@@ -1,0 +1,43 @@
+.sidebar {
+    width: 200px;
+    background-color: #fff; /* 背景颜色改为白色 */
+    color: #000; /* 字体颜色改为黑色 */
+    /*padding: 20px;*/
+    height: calc(100vh - 60px)
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px; /* 设置字体大小 */
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中 */
+    padding: 13px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 过渡效果 */
+}
+
+.sidebar ul li a .icon {
+    margin-right: 10px; /* 图标和文字的间距 */
+    font-size: 20px; /* 图标大小 */
+}
+
+/* hover效果 */
+.sidebar ul li a:hover {
+    background-color: #fff; /* 悬停时的背景颜色 */
+    color: #1990FF; /* 悬停时的字体颜色 */
+}
+
+/* 激活项样式 */
+.sidebar ul li a.active {
+    background-color: #E6F7FF; /* 激活时的背景颜色 */
+    color: #1990FF; /* 激活时的字体颜色 */
+}
+
+.sidebar ul li a.active:hover {
+    background-color: #E6F7FF; /* 激活项悬停时的颜色 */
+}
+

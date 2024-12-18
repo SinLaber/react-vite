@@ -1,0 +1,15 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaeaea;
+}
+
+a {
+  text-decoration: none;
+}

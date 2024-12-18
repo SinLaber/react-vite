@@ -1,0 +1,51 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* src/App.css */
+.breadcrumb {
+  background-color: #f8f9fa; /* 面包屑的背景色 */
+  padding: 20px 20px;
+  /*border-radius: 5px;*/
+  margin-bottom: 10px; /* 面包屑和内容之间的间距 */
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  font-size: 16px;
+  color: #007bff; /* 链接颜色 */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/';
+  margin: 0 8px;
+  color: #6c757d; /* 分隔符颜色 */
+}
+
+.breadcrumb-item a {
+  color: #007bff; /* 链接颜色 */
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+

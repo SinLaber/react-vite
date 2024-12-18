@@ -1,0 +1,45 @@
+/* src/styles/Code.css */
+
+#codeContainer {
+  display: flex; /* 左右布局 */
+  height: calc(100vh - 150px); /* 填充父容器高度，防止外层滚动 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 左半部分：Blockly 编辑器 */
+#blocklyDiv {
+  flex: 65; /* 占左侧 65% */
+  background-color: #e8f4fc;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  overflow: auto; /* 避免内容溢出 */
+}
+
+/* 右半部分：输出面板 */
+#outputPane {
+  flex: 35; /* 占右侧 35% */
+  display: flex;
+  flex-direction: column; /* 垂直布局 */
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* 右上部分 */
+#generatedCode {
+  flex: 1; /* 占右侧上半部分 */
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* 右下部分 */
+#output {
+  flex: 1; /* 占右侧下半部分 */
+  background-color: #fafafa;
+  padding: 10px;
+  overflow: auto;
+}
